@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.bg-gradient-radial {
+  background: rgb(0, 90, 215);
+  background: linear-gradient(256deg, rgb(1, 97, 231) 0%, rgb(208, 221, 239) 55%, rgb(1, 92, 219) 100%);
+}
+
+
+.bg-radial{
+  background: url(../src/assets/BG.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ul-item li{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: ease-in-out 350ms;
+  outline: none;
+}
+.ul-item li:hover{
+  cursor: pointer;
+  background: #4094F7;
+  color: white;
+  
+}
+/* .ul-item li:active{
+  cursor: pointer;
+  background: #4094F7;
+  
+} */
+::-webkit-scrollbar{
+  display: none;
+}
+
+@layer components {
+  .phone-input {
+    @apply w-[8px];
+  }
+}
